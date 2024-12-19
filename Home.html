@@ -1,0 +1,665 @@
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            bdy {
+    font-family: Arial, sans-serif;
+    background-color: #0000FF;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+ 
+.cntenr {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+ 
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+ 
+.rating {
+    font-size: 20px;
+    margin: 10px 0;
+}
+ 
+.stars {
+    font-size: 30px;
+    margin: 10px 0;
+}
+ 
+.star {
+    cursor: pointer;
+    margin: 0 5px;
+}
+ 
+.one {
+    color: rgb(255, 0, 0);
+}
+ 
+.two {
+    color: rgb(255, 106, 0);
+}
+ 
+.three {
+    color: rgb(251, 255, 120);
+}
+ 
+.four {
+    color: rgb(255, 255, 0);
+}
+ 
+.five {
+    color: rgb(24, 159, 14);
+}
+ 
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+ 
+btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ 
+btn:hover {
+    background-color: #0056b3;
+}
+ 
+.reviews {
+    margin-top: 20px;
+    text-align: left;
+}
+ 
+.review {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+ 
+.review p {
+    margin: 0;
+}
+
+
+          .slide {
+    width: auto;
+    position: relative;
+}
+button{
+    width: 100px;
+    padding: 10px;
+    border-radius:5px ;
+    font-weight: bold;
+    border: 2px solid #8aa7d8;
+    color: rgb(53, 172, 236);
+    cursor:pointer;
+    transition: 0.85;
+    
+}
+
+.slide ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.slide li {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+} 
+.slide li.active {
+    opacity: 1;
+}
+ 
+.slide .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+            nav{
+    width:100%;
+    height: 100px;
+    display: flex;
+    background-color: orange;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(246, 247, 248);
+    font-weight: bold;
+    position: sticky;
+    top: 0%;
+
+}
+.our{
+    width: 100%;
+    height: 80%;
+    background-color: orange;
+    color:white;
+    text-align: center;
+    font-size: 15px;
+}
+        .load{
+          animation:slide 2s;
+        
+        }
+        .slider{
+            background-repeat:repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 50vh;
+            animation: slide 40s infinite;        
+        }
+        .content{
+            color: #fff;
+            width: 100%;
+            height:50%;
+            
+        }
+        .principal{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            position:absolute;
+           letter-spacing: 5px;
+        }
+         @keyframes slide{
+            0%{
+                background-image: url("computer-sale-service-500x500.webp");
+            }
+            20%{
+                background-image: url("Laptop-Repair-in-Nehru-Place.webp");
+            }
+            20.01%{
+                background-image: url("hd-wallpapers-computer-1.jpg");
+            }
+            40%{
+                background-image: url("laptop-sales-and-service.jpg");
+            }
+             40.01%{
+                background-image: url("computer-sale-service-500x500.webp");
+            }
+            60%{
+                background-image: url("Laptop-Repair-in-Nehru-Place.webp");
+            }
+            60.01%{
+                background-image: url("hd-wallpapers-computer-1.jpg");
+            }
+            80%{
+                background-image: url("computer-260nw-371731795.webp");
+            }
+             80.01%{
+                background-image: url("computer-sale-service-500x500.webp");
+            }
+            100%{
+                background-image: url("Laptop-Repair-in-Nehru-Place.webp");
+            }
+            
+        }
+
+*{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+
+            }
+        
+            footer{
+                width: 100%;
+                height: 50%;
+              font-family: "open sans";
+              background-color: black;
+            }
+            a{
+                text-decoration: none;
+                transition: .7s;
+                color:#fff;
+
+            }
+            ul ,li{
+                list-style-type: disc;              
+            }  
+            .footer_info{               
+                background-color: black;
+                color: #fff;
+                display: flex;
+                padding: 60px 0;
+            }
+            .footer_info .footer_width{
+                padding: 0 25px;
+                font-size: 20px;
+            }
+            .footer_info h2{
+                margin-bottom: 35px;
+            }
+            .about, .contact{
+                width:700px;
+            }
+
+         .link{
+                width: 70%;
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+            .copy-right{
+                padding: 5px 0;
+                text-align: center;
+                background-color:#fff;
+            }
+           
+            .Uniq{
+            left: 40%;
+            top: 75%;  
+            transform: translate(-50%,-40%);
+            position:absolute;
+           letter-spacing: 4px;
+            }
+    
+           
+.gallery{
+    margin:35px;
+    border:1px solid #ccc;
+    float:left;
+    image-rendering:auto;
+}
+.gallery img{
+    width:100%;
+    height:auto;
+
+}
+.desc{
+    padding:15px;
+    text-align:center;
+}
+
+
+        </style>
+    </head>
+    <body> 
+            <nav>
+            <a href="Home.html"> Home</a>
+            <a href="About Us.html"> About Us</a></li>
+            <a href="services.html">Services</a></li>
+            <a href="Login From.html">Login</a></li>
+            <a href="Registration.html">Registration</a></li>
+            <a href="Contact us.html">Contact Us</a></li>
+            </nav>
+            <br>
+            <br>
+            <div class="slider">
+                <div class="load">
+                </div>
+                <div class="content">
+                    <div class="principal">
+                        <h1>Computer Sales and Services</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="uniq">
+                <h1>WELCOME TO <font color="orange">UNIQUE COMPUTER SERVICES</h1></font>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="n">
+                Welcome to UNIQUE COMPUTERS laptop repair in Chanda Nagar, you are at the right place to service your laptop with the best price and quality, since 2009.<br>
+                <br>
+                We are the team of highly skilled and qualified technicians for all your laptop repairs, our company is one of the<br> best laptop repair services in Vishrambag and across Sangli.<br>
+                <br>
+                We offer Affordable and Reasonable prices and we fix all kind of major issues, quick response, within a hour.<br> We can give solution and we fix at your home, office and anywhere in Sangli.<br>
+                <br>
+                We repair all kind of major brands like Dell, HP, Lenovo, Acer, Apple, Compaq, Toshiba, Sony, Samsung, Asus.<br> Whenever you want to have laptop repair supports just call us.<br>
+                <br>
+            </div>
+            
+              <br>
+              <br>
+                <div class="s">
+              <center>  <h1>WHY CHOOSE  <font color="orange">UNIQUE COMPUTER</h1></font>
+                UNIQUE Computers is here to take care of all your Laptop and computer needs. We'll help you with hardware, software,<br> server, and printer issues. Our staff is professional and efficient. Call us today for an appointment!
+                </center>
+            </div>
+               <br>
+                 <center>
+            <div class="container">
+                <div class="gallery">
+                    <img src=" D:\Computer Sales\allonepcs.jpg">
+                    <div class="desc"><h2>TRUSTED SERVICES</h2> </div>
+                <center> UNIQUE Computers is a Trusted for visit<br> Computer & Laptop Repair and Maintenance<br> Company in Sangli.</center>
+                </div>
+                <div class="gallery">
+                    <img src="D:\Computer Sales\amc.jpg ">
+                    <div class="desc"><h2>REMOTE SUPPORT.</h2> </div>
+                    Wherever and whenever you need a remote laptop and<br> Desktop repair, UNIQUE Computers has the fast and <br>flawless remote support.
+                </div>
+                <div class="gallery">
+                    <img src="D:\Computer Sales\os-installation.jpg ">
+                    <div class="desc"> <h2>PROFESSIONAL REPAIR.</h2></div><br>
+                   <center> We are the team of highly skilled and<br> qualified technicians for all your laptop repairs</center>
+                </div>
+            </div>
+        </center>
+            <br>
+            <BR>
+            <br>
+            <BR>
+                <br>
+            <BR>
+                <br>
+            <BR>
+                <br>
+            <BR>
+                <br>
+            <BR>
+                <br>
+            <BR>
+                <br>
+            <BR>
+                <br>
+            <BR>
+                <br>
+            <BR>
+                <br>
+            <BR> 
+            <br>
+            <div class="our">
+                <br>
+                <br>
+                <br>
+                <h1>OUR AIM</h1><br>
+                <br>
+                <h4>It is our goal to provide innovative repair services for Laptops, Desktops and Printers providing excellent customer service and quality repair with a quick turnaround. We serve to get you back to<br>normal use of your device as soon as possible and more efficiently while creating long-term relationships with customers.</h2><br>
+                    <br>
+                    <img src="D:\Computer Sales\pngtree-computer-icon-png-image_5105599.jpg" height="10%" width="5%"><br><b>Trusted services</b><br><br>First We Provide laptop and PC/Computer fault diagnostics check!  
+                    <br>
+                    <br>
+                    <img src="D:\Computer Sales\light-bulb-clip-art_f.jpg" height="10%" width="5%"><br><b>Remote Support</b>Wherever and whenever you need a remote laptop and <br>Desktop repair, UNIQUE Computers has the fast<br> and flawless remote support.<br>
+                    <br>
+                    <br>
+                   <img src="D:\Computer Sales\360_F_685437615_epiC4HNoYpPgJgAtcvVitRM6patDV9tn.jpg" height="10%" width="5%"><br> <b> Professional Repair</b><br>We are the team of highly skilled and qualified technicians<br> for all your laptop repairs
+            </div>
+            <br>
+            <BR>
+                <center>
+                <div class="bdy">
+                <div class="cntenr">
+                    <h1>UNIQUE COMPUTER SALES & SERVICES</h1>
+                    <div class="rating">
+                        <span id="rating">0</span>/5
+                    </div>
+                    <div class="stars" id="stars">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <p>Share your review:</p>
+                    <textarea id="review" placeholder="Write your review here">
+                      </textarea>
+                      <div class="btn">
+                    <button id="submit">Submit</button></div>
+                    <div class="reviews" id="reviews">
+                    </div>
+                </div>
+                </div>
+            </center>
+            <br>
+        <center>
+                <h1>SALES & SERVICES <font color="orange">WE OFFER</h1></font>
+                UNIQUE Computers is here to take care of all your Laptop and computer needs. We'll help you with hardware,<br> software, server, and printer issues. Our staff is professional and efficient. Call us today for an appointment!
+        </center>
+            <br>
+            <br>      
+            <br>
+            <center>
+        <div class="slide">
+            <ul>
+                <li>
+                    <img src="D:\Computer Sales\allonepcs.jpg" alt="GFG Image 1" >
+                    <div class="caption">
+                        All In one PC'S<br>
+                        <button type="submit" value="Book Now" name="Book Now">Book Now</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="im">
+                    <img src="D:\Computer Sales\allonemac.jpg"  alt="GFG Image 2"></div>
+                    <div class="caption">
+                        All in one mac<br>
+                        <button type="submit" value="Book Now" name="Book Now">Book Now</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="im">
+                    <img src="D:\Computer Sales\computeraccessories.jpg"  alt="GFG Image 3"></div>
+                    <div class="caption">
+                        Computer Acessorie's<br>
+                        <button type="submit" value="Book Now" name="Book Now">Book Now</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="im">
+                    <img src="D:\Computer Sales\macbookpro.jpg"  alt="GFG Image 4"></div>
+                    <div class="caption">
+                        Mac Book Pro<br>
+                        <button type="submit" value="Book Now" name="Book Now">Book Now</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="im">
+                    <img src="D:\Computer Sales\networkingservices.jpg"alt="GFG Image 5"></div>
+                    <div class="caption">
+                        Networking Services<br>
+                        <button type="submit" value="Book Now" name="Book Now">Book Now</button>
+                    </div>
+                </li>
+                <li><div class="im">
+                    <img src="D:\Computer Sales\laptopspare.jpg"alt="GFG Image 6"></div>
+                    <div class="caption">
+                        laptop Spare<br>
+                        <button type="submit" value="Book Now" name="Book Now">Book Now</button>
+                    </div>
+                </li>
+                <li><div class="im">
+                    <img src="D:\Computer Sales\desktops.jpg"alt="GFG Image 7"></div>
+                    <div class="caption">
+                        Desktop<br>
+                        <button type="submit" value="Book Now" name="Book Now">Book Now</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="im">
+                    <img src="D:\Computer Sales\servers.jpg"alt="GFG Image 8"></div>
+                    <div class="caption">
+                        Servers<br>
+                        <button type="submit" value="Book Now" name="Book Now">Book Now</button>
+                    </div>
+                </li>
+                <li><div class="im">
+                    <img src="D:\Computer Sales\printers.jpg" alt="GFG Image 9"></div>
+                    <div class="caption">
+                        Printers<br>
+                        <button type="submit" value="Book Now" name="Book Now">Book Now</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="im">
+                    <img src="D:\Computer Sales\laptops.jpg" alt="GFG Image 10"></div>
+                    <div class="caption">
+                    Laptop  <br>
+                    <button type="submit" value="Book Now" name="Book Now">Book Now</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </center>
+    <br>
+    <br>
+    
+   
+    <script>const stars = document.querySelectorAll(".star");
+        const rating = document.getElementById("rating");
+        const reviewText = document.getElementById("review");
+        const submitBtn = document.getElementById("submit");
+        const reviewsContainer = document.getElementById("reviews");    
+        stars.forEach((star) => {
+            star.addEventListener("click", () => {
+                const value = parseInt(star.getAttribute("data-value"));
+                rating.innerText = value;
+                stars.forEach((s) => s.classList.remove("one", 
+                                                        "two", 
+                                                        "three", 
+                                                        "four", 
+                                                        "five"));
+                stars.forEach((s, index) => {
+                    if (index < value) {
+                        s.classList.add(getStarColorClass(value));
+                    }
+                });         
+                stars.forEach((s) => s.classList.remove("selected"));
+                // Add "selected" class to the clicked star
+                star.classList.add("selected");
+            });
+        });         
+        submitBtn.addEventListener("click", () => {
+            const review = reviewText.value;
+            const userRating = parseInt(rating.innerText);         
+            if (!userRating || !review) {
+                alert(
+        "Please select a rating and provide a review before submitting."
+                     );
+                return;
+            }    
+            if (userRating > 0) {
+                const reviewElement = document.createElement("div");
+                reviewElement.classList.add("review");
+                reviewElement.innerHTML = 
+        `<p><strong>Rating: ${userRating}/5</strong></p><p>${review}</p>`;
+                reviewsContainer.appendChild(reviewElement);
+                reviewText.value = "";
+                rating.innerText = "0";
+                stars.forEach((s) => s.classList.remove("one", 
+                                                        "two", 
+                                                        "three", 
+                                                        "four", 
+                                                        "five", 
+                                                        "selected"));
+            }
+        });
+         
+        function getStarColorClass(value) {
+            switch (value) {
+                case 1:
+                    return "one";
+                case 2:
+                    return "two";
+                case 3:
+                    return "three";
+                case 4:
+                    return "four";
+                case 5:
+                    return "five";
+                default:
+                    return "";
+            }
+        }
+
+
+        const slide = document.querySelector('.slide');
+const slides = slide.querySelectorAll('li'); 
+const slideCount = slides.length;
+let activeSlide = 0;
+ setInterval(() => {
+  slides[activeSlide].classList.remove('active');
+  activeSlide++;
+  if (activeSlide === slideCount) {
+    activeSlide = 0;
+  }
+  slides[activeSlide].classList.add('active');
+}, 2000);
+    </script>
+    <br>
+    <br>     
+    <br>
+    <br>
+            <br>      
+            <br>
+            <br>
+            <br>      
+            <br>
+            <br
+            <br>      
+            <br>
+        </body>
+        <br>
+        <br>
+        <footer>
+            <div class="footer_info">
+                <div class="footer_width about">
+                    <h2><u>About Us </u></h2>
+                    <p>
+                        We are the team of highly skilled and qualified<br>
+                         technicians for all your laptop repairs, <br>
+                         our company is one of the best laptop repair services<br>
+                          in Chanda Nagar and across Hyderabad. <br>
+                          We offer Affordable and Reasonable prices and we<br> 
+                          fix all kind of major issues, quick response, <br>
+                          within a hour. We can give solution and we fix <br>
+                          at your home, office and anywhere in Hyderabad.<br>
+                    </p>
+                </div>
+                <div class="footer_width link">
+                    <h2><u>Services</u></h2>
+                    <ul><a href="Computer Sales & Services.html">computer-sales-and-services</a></ul><br>
+                    <ul><a href="Laptop Sales & Services.html">Laptop-sales-and-services</a></ul><br>
+                    <ul><a href="Home & Office Networking.html">Home and office networking</a></ul><br>
+                   <ul><a href="Data Recovery.html">Data Recovery</a></ul><br>
+                   <ul><a href="Os Installation & Virus Cleaning.html">Os Installation and virus cleaning</a></ul><br>
+                   <ul><a href="AMC Managed Services.html">AMC managed services</a></ul><br>
+                  <ul><a href="Apple mac Repair and services.html"> Apple mac repair and Services</a></ul><br>
+                </div>
+                <div class="footer_width contact">
+                    <h2><u>Address</u></h2>
+                    <ul><img src="D:\Computer Sales\download.png" width="20" height="20"><a href="#">Vishrambag,Sangli</a></ul>
+                    <ul><img src="D:\Computer Sales\download (1).png" width="20" height="20"><a href="#"> satyalangote@gmail.com</a></ul>
+                    <ul><img src="D:\Computer Sales\download (2).png" width="20" height="20"><a href="#">8208621263</a></ul>
+                </div>
+    
+            </div>
+            <div class="copy-right">
+                <p>© Computer Services. All Rights Reserved.</p>
+            </div>                
+            
+        </footer>
+
+    </html>
